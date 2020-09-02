@@ -6,16 +6,19 @@ const express = require("express");
 const app = express();
 
 
-const port = 3001;
+const PORT = process.env.PORT || 3001;
 const mainDir = path.join(__dirname, "./Develop/public/");
 
 app.use(express.static('./Develop/public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+// links 
+// https://git.heroku.com/immense-mountain-01092.git
+// https://immense-mountain-01092.herokuapp.com
 
 //terminal log
-app.listen(port, function () {
-    console.log(`API server now on port ${port}! `);
+app.listen(PORT, function () {
+    console.log(`API server now on port ${PORT}! `);
 })
 
 //ROUTES
