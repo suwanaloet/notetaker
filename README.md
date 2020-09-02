@@ -17,5 +17,8 @@ http://localhost:3001
 
 https://immense-mountain-01092.herokuapp.com
 
+## Repo link 
+https://github.com/suwanaloet/notetaker
+
 ## Contributing
 Sean Suwanaloet
